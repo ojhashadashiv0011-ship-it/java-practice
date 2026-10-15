@@ -6,8 +6,9 @@ public class concatenation {
         String firstName = sc.nextLine();
         System.out.print("Enter your last name:- ");
         String lastName = sc.nextLine();
+        String fullName = firstName + lastName;
 
-        System.out.println("Your name is " + firstName + " " + lastName);
+        System.out.println("Your name is " + fullName);
         sc.close();
     }
 }
