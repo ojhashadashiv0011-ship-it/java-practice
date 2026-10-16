@@ -1,14 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {5, 10, 15, 20, 25};
-int count = 0;
+        Scanner scanner = new Scanner(System.in);
 
-for (int i = 0; i < arr.length; i++) {
-    if (arr[i] >= 15) {
-        count++;
-    }
-}
+        System.out.print("Enter a word: ");
+        String original = scanner.next();
+        String reversed = new StringBuilder(original).reverse().toString();
+        if (original.equalsIgnoreCase(reversed)) {
+            System.out.println(original + " Palindrome");
+        } else {
+            System.out.println(original + " Not Palindrome");
+        }
 
-System.out.println(count);
+        scanner.close();
     }
 }
