@@ -2,10 +2,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        int a = 5;  // Binary: 0110
-int b = 3;  // Binary: 0011
+        int n = 15;
+int pos = 3;
 
-System.out.println(a | b);
+int bitMask = 1 << pos;
+int newNumber = n | bitMask;
+
+System.out.println(newNumber);
     } 
         
     
